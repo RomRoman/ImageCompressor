@@ -47,7 +47,8 @@ class ImageCompressorWorker(
 
         Result.success(
             workDataOf(
-                KEY_RESULT_PATH to file.absolutePath
+                KEY_RESULT_PATH to file.absolutePath,
+                KEY_RESULT_QUALITY to quality
             )
         )
 
@@ -57,5 +58,6 @@ class ImageCompressorWorker(
         const val KEY_CONTENT_URI = "KEY_CONTENT_URI"
         const val KEY_COMPRESSION_THRESHOLD = "KEY_COMPRESSION_THRESHOLD"
         const val KEY_RESULT_PATH = "KEY_RESULT_PATH"
+        const val KEY_RESULT_QUALITY = "KEY_RESULT_QUALITY"
     }
 }
